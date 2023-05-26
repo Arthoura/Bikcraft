@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+}
+
+:root{
+    --cinza-fundo: #f7f7f7;
+    --cinza-texto: #c6c6c6;
+    --vermelho: #ee2211;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--cinza-fundo);
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+}
+
+.info{
+    display: grid;
+    padding: 30px;
+    text-align: right;
+    align-items: center;
+}
+.info p{
+    font-size: 1.2em;
+}
+.info h1{
+    font-size: 2em;
+    align-self: end;
+}
+.bg-branco{
+    background-color: white;
+    border-radius: 4px;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+}
+.bike{
+    max-width: 100%;
+    height: 100%;
+}
+.img{
+    background-color: aqua;
+}
+
+header{
+    margin: 60px;
+}
+
+nav a{
+    background-color: white;
+    padding: 15px 25px;
+    margin-right: 20px;
+    border-radius: 4px;
+    margin-bottom: 60px;
+    text-decoration: none;
+    color: #111;
+}
+
+nav{
+    margin-bottom: 20px;
+}
+main{
+    margin: auto;
+    max-width: 1000px;
+    height: 100vh;
+}
+.vejabtn{
+    text-decoration: none;
+    color:white;
+    background-color: var(--vermelho);
+    padding: 10px 20px;
+    border-radius: 4px;
+    align-self: start;
+    justify-self: end;
+}
+.vantagens H2{
+    font-size: 64px;
+    color:var(--cinza-texto);
+    text-align: right;
+    padding-right: 20px;
+}
+
+.palavra-vantagens{
+    align-self: center;
+    padding-right: 10px;
+}
+
+.icone-titulo{
+    grid-template-columns: auto auto;
+    justify-content: start;
+    gap:10px;
+}
+.icone-titulo p{
+    grid-column: 2;
+}
+.descricao-vantagens > div{
+    margin: 50px 120px 50px 50px;
+}
+
+.separador{
+    position: absolute;
+    top:300px;
+    left:433px;
+    background-color: var(--vermelho);
+    width: 50px;
+    height: 3px;
+}
