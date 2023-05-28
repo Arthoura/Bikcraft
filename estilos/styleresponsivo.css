@@ -1,0 +1,30 @@
+@media (max-width:855px) and (min-width:620px){ /*Para tamanhos de tela abaixo de 855px e acima de 690px*/
+    .conteudo-vantagens{
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width:620px){ /*Para valores menores que 620px*/
+    .info::after{ /*Retiro o detalhe*/
+        display: none;
+    }
+    .palavra-vantagens{
+       padding: 120px 0px;
+       font-size: 3rem;
+       text-align: center;
+    }
+
+    .info{
+        text-align: center;
+    }
+    .vejabtn{
+        justify-self: center;
+    }
+
+    header  .bikecraft-logo{
+        margin: 20px;
+    }
+
+    nav a{
+        margin-bottom: 10px;
+    }
+}
