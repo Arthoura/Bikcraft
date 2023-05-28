@@ -30,7 +30,6 @@ p{ /* Definição do tamanho da fonte do parágrafo*/
 }
 .info h1{ /* Definição do tamanho da fonte do h1*/
     font-size: 2rem;
-    align-self: end;
 }
 .bg-branco{
     background-color: white;
