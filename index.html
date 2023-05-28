@@ -10,55 +10,50 @@
 <body>
     <header class = "flex">
         <img class = "bikecraft-logo" src="imagens/bikcraft.svg" alt="logo bikecraft">
-    </header>
-    <nav class = "flex">
+       <nav class = "flex">
             <a href="/">SOBRE</a>
             <a href="/">PRODUTOS</a>
             <a href="/">LOJAS</a>
             <a href="/">CONTATO</a>
-    </nav>
-
+        </nav>
+    </header>
+    
     <main>
-        <section class = " grid descricao">
+        <article class = "grid introdução">
             <!-- Div que contém as informações sobre a bike -->
-            <span class = "separador"></span>
-            <div class = "info bg-branco">
-                <h1>Bicicletas feitas à Mão</h1>
+            <div class = "info bg-branco" aria-labelledby="label-info">
+                <h1 id = "label-info">Bicicletas feitas à Mão</h1>
                 <p>A Nimbus Stark é a melhor bicicleta já criada pela nossa equipe. Ela vem equipada com os melhores acessórios da marca.</p>
                 <a class = "vejabtn" href="/">VER MAIS</a>
             </div>
+            
             <!-- Div que contém a imagem da bike -->
-            <div class = "img">
-                <img class = "bike" src="imagens/bicicleta.jpg" alt="bicicleta preta">
-            </div>
-        </section>
+                <img class = "img bike-foto" src="imagens/bicicleta.jpg" alt="bicicleta preta">
+        </article>
+        <article class = "grid" aria-labelledby="label-vantagens">
+                <h2 class = "palavra-vantagens" id = "label-vantagens">VANTAGENS BIKCRAFT</h2>
 
-        <section class = "grid vantagens">
-            <div class = "palavra-vantagens">
-                <H2>VANTAGENS BIKCRAFT</H2>
-            </div>
-
-            <div class = "descricao-vantagens bg-branco">
-                <div class = "eletrico grid icone-titulo">
+            <div class = "vantagens bg-branco">
+                <div class = "vantagens-item">
                         <img class = "icone" src="imagens/eletrica.svg" alt="">
                         <h3>Motor elétrico</h3>
                     <p>Permite você viajar distâncias inimagináveis com a sua bike </p>
                 </div>
-                <div class = "velocidade grid icone-titulo">
+                <div class = "vantagens-item">
                         <img class = "icone" src="imagens/velocidade.svg" alt="">
                         <h3>40 km/h</h3>
                         <p>A mais rápida bicicleta elétrica disponível hoje no mercado</p>
                 </div>
-                <div class = "Rastreador grid icone-titulo">
+                <div class = "vantagens-item">
                         <img class = "icone" src="imagens/rastreador.svg" alt="">
                         <h3>Rastreador</h3>
                     <p>Rastreador e sistema anti-furto para garantir o seu bem-estar</p>
                 </div>
             </div>
-        </section>
+        </article>
     </main>
     <footer>
-
+        <h3>Bikcraft. Alguns direitos reservados</h3>
     </footer>
 </body>
 </html>

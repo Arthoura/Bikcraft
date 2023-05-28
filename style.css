@@ -12,24 +12,24 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--cinza-fundo);
 }
-
 .grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
 }
-
 .info{
     display: grid;
     padding: 30px;
     text-align: right;
-    align-items: center;
+    align-content: center;
+    gap:20px;
+    position: relative;
 }
-.info p{
-    font-size: 1.2em;
+p{ /* Definição do tamanho da fonte do parágrafo*/
+    font-size: 1.2rem;
+    line-height: 1.3;
 }
-.info h1{
-    font-size: 2em;
+.info h1{ /* Definição do tamanho da fonte do h1*/
+    font-size: 2rem;
     align-self: end;
 }
 .bg-branco{
@@ -40,18 +40,20 @@ body{
     display: flex;
     justify-content: center;
 }
-.bike{
+.bike-foto{
     max-width: 100%;
-    height: 100%;
 }
-.img{
-    background-color: aqua;
-}
-
+/*Definições gerais*/
 header{
-    margin: 60px;
+    align-items: center;
+    margin-top: 60px;
+    flex-direction: column;
+    gap:60px;
 }
 
+header .bikecraft-logo{
+    width: 150px;
+}
 nav a{
     background-color: white;
     padding: 15px 25px;
@@ -60,15 +62,16 @@ nav a{
     margin-bottom: 60px;
     text-decoration: none;
     color: #111;
+    border: 2px solid transparent;
 }
-
 nav{
     margin-bottom: 20px;
+    flex-wrap: wrap;
+    box-sizing: border-box;
 }
 main{
     margin: auto;
     max-width: 1000px;
-    height: 100vh;
 }
 .vejabtn{
     text-decoration: none;
@@ -76,38 +79,60 @@ main{
     background-color: var(--vermelho);
     padding: 10px 20px;
     border-radius: 4px;
-    align-self: start;
     justify-self: end;
 }
-.vantagens H2{
-    font-size: 64px;
-    color:var(--cinza-texto);
-    text-align: right;
-    padding-right: 20px;
-}
-
 .palavra-vantagens{
-    align-self: center;
-    padding-right: 10px;
+    font-size: 4rem;
+    color:rgba(0, 0, 0, 0.2);
+    text-align: right;
+    padding: 40px;
+    align-self:center;
+    background-image: url("./imagens/onda.svg");
 }
 
-.icone-titulo{
+.vantagens-item{
+    display: grid;
     grid-template-columns: auto auto;
-    justify-content: start;
-    gap:10px;
+    gap:10px 20px;
 }
-.icone-titulo p{
+.vantagens-item p{
     grid-column: 2;
 }
-.descricao-vantagens > div{
-    margin: 50px 120px 50px 50px;
+.vantagens > div{
+    position: relative;
+    margin: 50px 50px 20px 50px;
+    padding: 20px 50px 20px 20px;
+}
+.info::after{
+    content: "";
+    position: absolute;
+    top:30px;
+    right: -30px;
+    background-color: var(--vermelho);
+    width: 60px;
+    height: 4px;
 }
 
-.separador{
-    position: absolute;
-    top:300px;
-    left:433px;
-    background-color: var(--vermelho);
-    width: 50px;
-    height: 3px;
+.vantagens-item:nth-child(odd){
+    background-color: var(--cinza-fundo);
+}
+
+footer{
+    margin-top: 20px;
+    background-color: white;
+    text-align: center;
+    padding: 50px;
+}
+/* Utilização do hover */
+
+nav a:hover{
+    border: 2px outset #e21;
+ }
+
+main a:hover{
+    background-color: #870b00;
+}
+
+.vantagens-item:hover{
+ border-left: 4px solid #ee2211;
 }
